@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img id="img1" src="wind1.svg" alt="">
+        <img id="img2" src="wind2.svg" alt="">
+        <header>
+            <h1 id="title">Climate Protection Survey</h1>
+            <p id="description">We´d like to know your opinion !</p>    
+        </header>
+        
+        <form action="" id="survey-form">
+            <div class="input">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" type="text" name="name" placeholder="Enter your name" required>    
+            </div>
+            <div class="input">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" type="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input">
+                <label id="age-label" for="age">Age</label>
+                <input id="age" type="number" name="age" placeholder="Age" min="4" max="130">
+            </div>
+            <div class="input">
+                <label id="dropdown-label" for="dropdown">How important is climate protection for you ?</label>
+                <select id="dropdown" name="dropdown">
+                    <option value="" selected disabled>select</option>
+                    <option value="Very important">Very important</option>
+                    <option value="Important">Important</option>
+                    <option value="Don´t know">Don´t know</option>
+                    <option value="Not importent">Not importent</option>
+                </select>
+            </div>
+            <div class="input">
+                <p>Have you changed your lifestyle because of climate change ?</p>
+                <label>
+                    <input type="radio" name="lifestyle" value="yes" checked>yes
+                    <input type="radio" name="lifestyle" value="no">no  
+                </label>
+            </div>
+            <div class="input">
+                <p>What do you think are the most importent actions for climate protection ?</p>
+                <label>
+                    <input type="checkbox" name="actions" value="1">more public transport
+                </label>
+                <label>
+                    <input type="checkbox" name="actions" value="2">energy saving
+                </label>    
+                <label>
+                    <input type="checkbox" name="actions" value="3">more renewable energy
+                </label>   
+                <label>
+                    <input type="checkbox" name="actions" value="4">less meat consumption
+                </label>   
+                <label>
+                    <input type="checkbox" name="actions" value="5">more recycling
+                </label> 
+                <label>
+                    <input type="checkbox" name="actions" value="6">forest protection
+                </label> 
+            </div>
+            <div class="input">
+                <label for="input-textarea">Additional comment</label>
+                <textarea name="comment" id="input-textarea" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="input">
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
