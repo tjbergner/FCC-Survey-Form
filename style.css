@@ -67,11 +67,11 @@ form {
     margin-bottom: 0.5rem;
 }
 
-#name, #email, #age, #dropdown {
+#name, #email, #number, #dropdown {
     height: 2rem;
 }
 
-#name, #email, #age, #dropdown, #input-textarea, #submit{
+#name, #email, #number, #dropdown, #input-textarea, #submit{
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     border-radius: 5px;
@@ -79,7 +79,7 @@ form {
     padding-left: 0.5rem;
 }
 
-#age {
+#number {
     width: 4rem;
 }
 
